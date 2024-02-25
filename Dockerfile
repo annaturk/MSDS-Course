@@ -6,7 +6,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /msds-course
 
 FROM gcr.io/distroless/base-debian11
 WORKDIR /
-COPY --from=builder /msds-courses /msds-courses
+COPY --from=builder /msds-courses.go
 ENV PORT 1234
 USER nonroot:nonroot
 CMD ["/msds-course"]
