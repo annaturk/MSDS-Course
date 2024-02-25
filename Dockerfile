@@ -1,4 +1,4 @@
-FROM golang:1.21.6
+FROM golang:1.21.6 as builder
 WORKDIR /app
 RUN go mod init msds-course
 COPY *.go ./
