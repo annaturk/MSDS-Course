@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-const PORT = ":1234"
+const PORT = ":8080"
 
 
 /*The logic behind each handler function is simple: read user input and 
