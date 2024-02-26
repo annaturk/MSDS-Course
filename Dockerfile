@@ -1,7 +1,7 @@
 FROM golang:1.21.6
 WORKDIR /app
 RUN go mod init msds-course
-COPY *.go ./
+COPY *.go coursedata.csv ./
 RUN CGO_ENABLED=0 GOOS=linux go build -o /msds-course
 
 # FROM gcr.io/distroless/base-debian11
